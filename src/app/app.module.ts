@@ -7,6 +7,7 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { ToolbarModule } from './modules/toolbar/toolbar.module';
 import { CollectionsModule } from './modules/collections/collections.module';
 import { GaleryModule } from './modules/galery/galery.module';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { GaleryModule } from './modules/galery/galery.module';
     CollectionsModule,
     GaleryModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
 })
 export class AppModule {}
