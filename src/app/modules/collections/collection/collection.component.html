@@ -1,0 +1,29 @@
+<mat-card (click)="this.onEdit()" (appClickOutside)="this.stopEditing()">
+  <mat-card-header>
+    <div mat-card-avatar class="collection-header-image"></div>
+    <mat-card-title>
+      <mat-form-field *ngIf="this.isEdited()">
+        <input matInput [(ngModel)]="this.title" placeholder="Collection Name" />
+      </mat-form-field>
+      <span *ngIf="!this.isEdited()">{{this.title}}</span>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <mat-form-field *ngIf="this.isEdited()">
+        <input matInput [(ngModel)]="this.description" placeholder="Description" />
+      </mat-form-field>
+      <span *ngIf="!this.isEdited()">{{this.description}}</span>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="/src/assets/images/paris.jpg" alt="new vollection" />
+  <mat-card-content>
+    <mat-form-field *ngIf="this.isEdited()">
+      <input matInput [(ngModel)]="this.comments" placeholder="Comments" />
+    </mat-form-field>
+    <span *ngIf="!this.isEdited()">{{this.comments}}</span>
+  </mat-card-content>
+  <!--
+    <mat-card-actions>
+      <button mat-button>Edit</button>
+    </mat-card-actions>
+  -->
+</mat-card>

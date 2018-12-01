@@ -1,0 +1,8 @@
+<div class='row-cards'>
+  <div class="collection-card" *ngFor="let collection of this.getCollections()">
+    <app-collection [collection]=collection></app-collection>
+  </div>
+  <div class="empty-card">
+    <mat-card>add new card</mat-card>
+  </div>
+</div>
