@@ -14,7 +14,7 @@
       <span *ngIf="!this.isEdited()">{{this.description}}</span>
     </mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="/src/assets/images/paris.jpg" alt="new vollection" />
+  <img mat-card-image src="/assets/images/paris.jpg" alt="new vollection" />
   <mat-card-content>
     <mat-form-field *ngIf="this.isEdited()">
       <input matInput [(ngModel)]="this.comments" placeholder="Comments" />

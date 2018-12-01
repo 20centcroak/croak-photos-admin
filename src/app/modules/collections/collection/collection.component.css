@@ -1,6 +1,6 @@
 @import '../collections.component.css';
 
 .collection-header-image {
-  background-image: url('/src/assets/images/paris.jpg');
+  background-image: url('/assets/images/paris.jpg');
   background-size: cover;
 }

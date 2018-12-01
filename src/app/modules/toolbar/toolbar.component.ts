@@ -17,13 +17,13 @@ export class ToolbarComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'gallery',
       sanitizer.bypassSecurityTrustResourceUrl(
-        'src/assets/mat-icons/baseline-photo_album-24px.svg'
+        '/assets/mat-icons/baseline-photo_album-24px.svg'
       )
     );
     iconRegistry.addSvgIcon(
       'collections',
       sanitizer.bypassSecurityTrustResourceUrl(
-        'src/assets/mat-icons/baseline-add_a_photo-24px.svg'
+        '/assets/mat-icons/baseline-add_a_photo-24px.svg'
       )
     );
   }
